@@ -1,0 +1,2852 @@
+<robot
+  name="track_urdf">
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.000777562835768861 -2.46330733588707E-16 0.000993202520633923"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="-1.3946076704388E-20"
+        ixz="2.09941965657592E-09"
+        iyy="1.76160916035716E-07"
+        iyz="-8.20595945331475E-22"
+        izz="2.66278261011616E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.000777562836710072 3.46944695195361E-18 0.00099320252063391"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="-2.24908014159509E-22"
+        ixz="2.09941965648585E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.27279366543452E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="continuous">
+    <origin
+      xyz="0.0219499999992141 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.000777566922796812 -3.46944695195361E-18 0.000993202520633854"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="-2.67679981581549E-22"
+        ixz="2.09941965648575E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.27667090135446E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141019 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.000777562838659707 3.46944695195361E-18 0.00099320252063391"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355704E-06"
+        ixy="-2.93127041729458E-22"
+        ixz="2.09941965648586E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.35295405202729E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="0.000777566924746453 6.93889390390723E-18 0.000993202520633882"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355704E-06"
+        ixy="-3.15300527409876E-22"
+        ixz="2.09941965648592E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.38258528137507E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="0.000777562840609314 1.73472347597681E-17 0.000993202520633882"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355704E-06"
+        ixy="5.68047469419304E-23"
+        ixz="2.09941965648586E-09"
+        iyy="1.76160916032082E-07"
+        iyz="-1.1050931280386E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link7">
+    <inertial>
+      <origin
+        xyz="0.000785765057163157 6.93889390390723E-18 0.000986726149723047"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50795278305441E-06"
+        ixy="-1.30118933843542E-22"
+        ixz="8.16576053485871E-10"
+        iyy="1.76160916032082E-07"
+        iyz="-1.28184656019287E-22"
+        izz="2.66280677061515E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint7"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141019 0 0"
+      rpy="0 -0.00828531732551906 0" />
+    <parent
+      link="link6" />
+    <child
+      link="link7" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link8">
+    <inertial>
+      <origin
+        xyz="0.000777562842571577 -2.77555756156289E-17 0.000993202520876285"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355714E-06"
+        ixy="-2.11451673353429E-22"
+        ixz="2.09941966043237E-09"
+        iyy="1.76160916032081E-07"
+        iyz="5.52679336195576E-23"
+        izz="2.66278261011241E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint8"
+    type="continuous">
+    <origin
+      xyz="0.0219620461945438 0 -9.11888985767467E-05"
+      rpy="2.75455796729503E-19 1.73472347597683E-18 -3.99329631761765E-20" />
+    <parent
+      link="link7" />
+    <child
+      link="link8" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link9">
+    <inertial>
+      <origin
+        xyz="0.00077756284404179 3.46944695195361E-18 0.000993202520963993"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355758E-06"
+        ixy="-4.06674517302232E-23"
+        ixz="2.09941967650691E-09"
+        iyy="1.76160916032082E-07"
+        iyz="-1.53566149364171E-24"
+        izz="2.66278261011199E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint9"
+    type="continuous">
+    <origin
+      xyz="0.0220272142639953 0 0.0022436710742904"
+      rpy="6.96247369709251E-18 -0.203476612589518 -1.66677661065212E-18" />
+    <parent
+      link="link8" />
+    <child
+      link="link9" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link10">
+    <inertial>
+      <origin
+        xyz="0.000777562847295354 1.04083408558608E-17 0.000993202520992026"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355775E-06"
+        ixy="-2.78005751931412E-22"
+        ixz="2.09941968302191E-09"
+        iyy="1.76160916032081E-07"
+        iyz="5.95001544334498E-24"
+        izz="2.6627826101118E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint10"
+    type="continuous">
+    <origin
+      xyz="0.0219283256906435 0 0.00315053770347107"
+      rpy="9.98197016036442E-18 -0.286039061774273 -2.78586379610562E-18" />
+    <parent
+      link="link9" />
+    <child
+      link="link10" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link11">
+    <inertial>
+      <origin
+        xyz="0.000777562850497973 -3.46944695195361E-18 0.000993202520999853"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355792E-06"
+        ixy="-3.03596292210846E-22"
+        ixz="2.09941968917391E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-8.59507571285758E-23"
+        izz="2.66278261011164E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint11"
+    type="continuous">
+    <origin
+      xyz="0.0219283168498805 0 0.00315053770695833"
+      rpy="9.9819701723548E-18 -0.286039062093375 -2.78586380098258E-18" />
+    <parent
+      link="link10" />
+    <child
+      link="link11" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link12">
+    <inertial>
+      <origin
+        xyz="0.00077756285339052 1.73472347597681E-17 0.000993202520986447"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355806E-06"
+        ixy="-5.58683285735131E-22"
+        ixz="2.09941969446416E-09"
+        iyy="1.76160916032081E-07"
+        iyz="3.24391313610606E-22"
+        izz="2.6627826101115E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint12"
+    type="continuous">
+    <origin
+      xyz="0.0219283256911645 0 0.00315053802206863"
+      rpy="9.98197125591148E-18 -0.286039090927653 -2.78586424171443E-18" />
+    <parent
+      link="link11" />
+    <child
+      link="link12" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link13">
+    <inertial>
+      <origin
+        xyz="0.000777562855737199 -3.46944695195361E-18 0.000993202520953335"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355817E-06"
+        ixy="-3.03256068186612E-22"
+        ixz="2.09941969846232E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-3.38539828153861E-22"
+        izz="2.66278261011139E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint13"
+    type="continuous">
+    <origin
+      xyz="0.021928321247813 0 0.00315053768848322"
+      rpy="9.98197010882614E-18 -0.28603906040281 -2.7858637751427E-18" />
+    <parent
+      link="link12" />
+    <child
+      link="link13" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link14">
+    <inertial>
+      <origin
+        xyz="1.73472347597681E-17 0.000777562857347824 -0.000993202520902903"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="1.76160916032081E-07"
+        ixy="7.80926126370898E-23"
+        ixz="-6.95100890656647E-23"
+        iyy="2.50797694355824E-06"
+        iyz="-2.0994197008424E-09"
+        izz="2.66278261011132E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint14"
+    type="continuous">
+    <origin
+      xyz="0.021928321028939 0 0.00315053808427182"
+      rpy="2.85555355697021 -9.57639383598062E-18 1.5707963267949" />
+    <parent
+      link="link13" />
+    <child
+      link="link14" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link15">
+    <inertial>
+      <origin
+        xyz="0.000777562858090934 -2.77555756156289E-17 0.000993202520839342"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355825E-06"
+        ixy="8.85595776271647E-23"
+        ixz="2.09941970141269E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.18867806652093E-22"
+        izz="2.6627826101113E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint15"
+    type="continuous">
+    <origin
+      xyz="0 0.021928326672323 -0.00315053832363096"
+      rpy="-3.14159265358979 0.28603911852222 1.5707963267949" />
+    <parent
+      link="link14" />
+    <child
+      link="link15" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link16">
+    <inertial>
+      <origin
+        xyz="0.000777562857906908 -3.46944695195361E-18 0.000993202520767844"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355822E-06"
+        ixy="-8.67438824140904E-23"
+        ixz="2.09941970012626E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-2.02826955426058E-24"
+        izz="2.66278261011134E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint16"
+    type="continuous">
+    <origin
+      xyz="0.0219283243292686 0 0.00315053833745391"
+      rpy="9.98197234041441E-18 -0.286039119787101 -2.78586468283066E-18" />
+    <parent
+      link="link15" />
+    <child
+      link="link16" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link17">
+    <inertial>
+      <origin
+        xyz="0.000777562856810105 3.81639164714898E-17 0.00099320252069407"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355814E-06"
+        ixy="3.83862848374785E-22"
+        ixz="2.09941969708711E-09"
+        iyy="1.76160916032081E-07"
+        iyz="3.63650362026182E-23"
+        izz="2.66278261011143E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint17"
+    type="continuous">
+    <origin
+      xyz="0.021928326995672 0 0.00315053745927532"
+      rpy="9.98196932065787E-18 -0.28603903942905 -2.78586345455843E-18" />
+    <parent
+      link="link16" />
+    <child
+      link="link17" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link18">
+    <inertial>
+      <origin
+        xyz="0.000777562854889863 2.77555756156289E-17 0.000993202520624209"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355801E-06"
+        ixy="-3.09647610799724E-22"
+        ixz="2.0994196925432E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-4.1657074221705E-24"
+        izz="2.66278261011155E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint18"
+    type="continuous">
+    <origin
+      xyz="0.0219283122967155 0 0.00315053690572517"
+      rpy="9.9819674171883E-18 -0.286038988776253 -2.78586268033193E-18" />
+    <parent
+      link="link17" />
+    <child
+      link="link18" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link19">
+    <inertial>
+      <origin
+        xyz="0.000777562852302266 2.42861286636753E-17 0.000993202520219894"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355767E-06"
+        ixy="2.9291227362608E-22"
+        ixz="2.09941968025286E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.65136679618618E-22"
+        izz="2.66278261011188E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint19"
+    type="continuous">
+    <origin
+      xyz="0.0219435337159395 0 0.00304644941565668"
+      rpy="9.62550596045448E-18 -0.276521123407914 -2.64235027700654E-18" />
+    <parent
+      link="link18" />
+    <child
+      link="link19" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link20">
+    <inertial>
+      <origin
+        xyz="0.000777562850384272 6.93889390390723E-18 0.000993202520633896"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="2.11498646346186E-22"
+        ixz="2.09941965648588E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.09614587137688E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint20"
+    type="continuous">
+    <origin
+      xyz="0.0220341966063047 0 0.000868364943772751"
+      rpy="2.64672289075112E-18 -0.0789579619345198 -4.7441530875224E-19" />
+    <parent
+      link="link19" />
+    <child
+      link="link20" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link21">
+    <inertial>
+      <origin
+        xyz="-0.0211724330637178 6.93889390390723E-18 0.000993202520633743"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="2.12002467062181E-22"
+        ixz="2.09941965648588E-09"
+        iyy="1.76160916032082E-07"
+        iyz="1.11218906462332E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint21"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141021 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link20" />
+    <child
+      link="link21" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link22">
+    <inertial>
+      <origin
+        xyz="0.000777562852333449 3.46944695195361E-18 0.000993202520633799"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="-1.14384424488069E-22"
+        ixz="2.09941965647778E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.72601473149988E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint22"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141021 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link21" />
+    <child
+      link="link22" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link23">
+    <inertial>
+      <origin
+        xyz="0.000777562853308003 0 0.000993202520633882"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="-1.44424299778E-23"
+        ixz="2.09941965648507E-09"
+        iyy="1.7616091603208E-07"
+        iyz="1.77218284752178E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint23"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141022 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link22" />
+    <child
+      link="link23" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link24">
+    <inertial>
+      <origin
+        xyz="0.00077756285428255 6.93889390390723E-18 0.000993202520633896"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="-1.92603577539109E-23"
+        ixz="2.09941965648581E-09"
+        iyy="1.76160916032081E-07"
+        iyz="8.71778295320829E-23"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint24"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141022 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link23" />
+    <child
+      link="link24" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link25">
+    <inertial>
+      <origin
+        xyz="0.000777562855257027 6.93889390390723E-18 0.000993202520633882"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="8.33549942759777E-23"
+        ixz="2.09941965648574E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.22174551537954E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint25"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141022 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link24" />
+    <child
+      link="link25" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link26">
+    <inertial>
+      <origin
+        xyz="0.000777562856231821 1.04083408558608E-17 0.000993202520633896"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="-2.87629087832312E-24"
+        ixz="2.09941965648573E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.32609150940909E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint26"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link25" />
+    <child
+      link="link26" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link27">
+    <inertial>
+      <origin
+        xyz="0.000777562857206504 6.93889390390723E-18 0.000993202520633896"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="1.64339892858064E-23"
+        ixz="2.09941965648577E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.30598969448041E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint27"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link26" />
+    <child
+      link="link27" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link28">
+    <inertial>
+      <origin
+        xyz="0.000777562858181209 6.93889390390723E-18 0.000993202520633937"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="-1.74763872333018E-24"
+        ixz="2.0994196564858E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.38968471796651E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint28"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141021 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link27" />
+    <child
+      link="link28" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link29">
+    <inertial>
+      <origin
+        xyz="0.000777562859155881 -1.38777878078145E-17 0.00099320252063391"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="2.53966370540157E-24"
+        ixz="2.0994196564858E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.16089718906725E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint29"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141021 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link28" />
+    <child
+      link="link29" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link30">
+    <inertial>
+      <origin
+        xyz="0.000777562860130629 0 0.000993202520633896"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="7.70728411563398E-23"
+        ixz="2.09941965648573E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.69708794361311E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint30"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link29" />
+    <child
+      link="link30" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link31">
+    <inertial>
+      <origin
+        xyz="0.000777562861105321 0 0.000993202520633896"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="1.20541435164097E-22"
+        ixz="2.09941965648577E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.8343555814959E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint31"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link30" />
+    <child
+      link="link31" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link32">
+    <inertial>
+      <origin
+        xyz="0.000777562862079778 6.93889390390723E-18 0.00099320252063391"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="1.54856607633575E-22"
+        ixz="2.0994196564858E-09"
+        iyy="1.76160916032082E-07"
+        iyz="1.54740460044628E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint32"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141022 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link31" />
+    <child
+      link="link32" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link33">
+    <inertial>
+      <origin
+        xyz="0.000777562863054138 3.46944695195361E-18 0.000993202520633923"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="-1.23007037216863E-22"
+        ixz="2.09941965648584E-09"
+        iyy="1.76160916032081E-07"
+        iyz="9.32458185830653E-23"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint33"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141022 0 0"
+      rpy="0 -3.41574842498747E-32 0" />
+    <parent
+      link="link32" />
+    <child
+      link="link33" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link34">
+    <inertial>
+      <origin
+        xyz="0.000784446479941608 0 0.000987774759050333"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50795524057994E-06"
+        ixy="-1.47258091547047E-22"
+        ixz="1.02340023455357E-09"
+        iyy="1.76160916032081E-07"
+        iyz="9.06320064437895E-23"
+        izz="2.66280431308962E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint34"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141022 0 0"
+      rpy="0 -0.00694968920459615 0" />
+    <parent
+      link="link33" />
+    <child
+      link="link34" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link35">
+    <inertial>
+      <origin
+        xyz="0.000777562865048459 3.12250225675825E-17 0.000993202521500342"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355741E-06"
+        ixy="4.817392420424E-24"
+        ixz="2.09941967060788E-09"
+        iyy="1.76160916032081E-07"
+        iyz="3.49095458141135E-23"
+        izz="2.66278261011214E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint35"
+    type="continuous">
+    <origin
+      xyz="0.0219601547251725 0 -7.64821609738342E-05"
+      rpy="2.31073672964784E-19 -4.15076345731319E-32 -3.3341322573268E-20" />
+    <parent
+      link="link34" />
+    <child
+      link="link35" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link36">
+    <inertial>
+      <origin
+        xyz="0.000777562867787934 -6.93889390390723E-18 0.000993202521673897"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355904E-06"
+        ixy="-2.82505425016244E-22"
+        ixz="2.0994197306798E-09"
+        iyy="1.76160916032081E-07"
+        iyz="1.53253128918644E-22"
+        izz="2.66278261011051E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint36"
+    type="continuous">
+    <origin
+      xyz="0.0220304225060786 0 0.00219458890246736"
+      rpy="6.80392754934443E-18 -0.19902626198962 -1.61424739746021E-18" />
+    <parent
+      link="link35" />
+    <child
+      link="link36" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link37">
+    <inertial>
+      <origin
+        xyz="0.000777562877283366 3.46944695195361E-18 0.000993202521716252"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355955E-06"
+        ixy="-2.72590099533686E-22"
+        ixz="2.09941974917201E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-6.95075884540807E-23"
+        izz="2.66278261011002E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint37"
+    type="continuous">
+    <origin
+      xyz="0.0219283296308632 0 0.00315053830556483"
+      rpy="9.98197223075862E-18 -0.286039116869078 -2.78586463822887E-18" />
+    <parent
+      link="link36" />
+    <child
+      link="link37" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link38">
+    <inertial>
+      <origin
+        xyz="0.00077756288611075 -3.46944695195361E-18 0.000993202521697073"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355999E-06"
+        ixy="2.24540886948979E-22"
+        ixz="2.09941976559704E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.03972525611278E-22"
+        izz="2.66278261010957E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint38"
+    type="continuous">
+    <origin
+      xyz="0.021928321168275 0 0.00315053802756771"
+      rpy="9.98197127482097E-18 -0.28603909143085 -2.78586424940566E-18" />
+    <parent
+      link="link37" />
+    <child
+      link="link38" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link39">
+    <inertial>
+      <origin
+        xyz="0.000777562893552533 1.00613961606655E-16 0.000993202521618108"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694356034E-06"
+        ixy="2.43213632570225E-22"
+        ixz="2.09941977861996E-09"
+        iyy="1.76160916032081E-07"
+        iyz="7.88256058881791E-22"
+        izz="2.66278261010921E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint39"
+    type="continuous">
+    <origin
+      xyz="0.0219283257167747 0 0.00315053854788722"
+      rpy="9.98197306402229E-18 -0.286039139042873 -2.78586497715493E-18" />
+    <parent
+      link="link38" />
+    <child
+      link="link39" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link40">
+    <inertial>
+      <origin
+        xyz="0.000777562899003999 4.85722573273506E-17 0.000993202521485825"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014666" />
+      <inertia
+        ixx="2.50797694356059E-06"
+        ixy="2.93291265544926E-22"
+        ixz="2.09941978718129E-09"
+        iyy="1.76160916032082E-07"
+        iyz="7.52097620073501E-23"
+        izz="2.66278261010899E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint40"
+    type="continuous">
+    <origin
+      xyz="0.0219283283864405 0 0.0031505382872784"
+      rpy="9.98197216787738E-18 -0.28603911519577 -2.78586461265228E-18" />
+    <parent
+      link="link39" />
+    <child
+      link="link40" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link41">
+    <inertial>
+      <origin
+        xyz="0.000777562902022279 6.93889390390723E-17 0.000993202521310632"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694356067E-06"
+        ixy="-1.33396469917122E-22"
+        ixz="2.09941979058827E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-5.57186379270956E-24"
+        izz="2.66278261010889E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint41"
+    type="continuous">
+    <origin
+      xyz="0.0219283221497188 0 0.00315053809829657"
+      rpy="9.98197151803336E-18 -0.286039097902921 -2.78586434833125E-18" />
+    <parent
+      link="link40" />
+    <child
+      link="link41" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link42">
+    <inertial>
+      <origin
+        xyz="0.000777562902361972 -2.08166817117217E-17 0.000993202521107239"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694356062E-06"
+        ixy="-2.01815122684994E-22"
+        ixz="2.09941978856079E-09"
+        iyy="1.76160916032081E-07"
+        iyz="4.53905950444762E-22"
+        izz="2.66278261010895E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint42"
+    type="continuous">
+    <origin
+      xyz="0.0219283258133888 0 0.00315053787110486"
+      rpy="9.98197073679971E-18 -0.286039077113661 -2.78586403056805E-18" />
+    <parent
+      link="link41" />
+    <child
+      link="link42" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link43">
+    <inertial>
+      <origin
+        xyz="0.000777562899995546 -6.93889390390723E-18 0.000993202520891912"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694356042E-06"
+        ixy="-2.10435848494078E-22"
+        ixz="2.09941978126429E-09"
+        iyy="1.76160916032081E-07"
+        iyz="4.79052435159673E-23"
+        izz="2.66278261010914E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint43"
+    type="continuous">
+    <origin
+      xyz="0.0219283190501181 0 0.00315053763972434"
+      rpy="9.98196994115981E-18 -0.286039055941101 -2.7858637069449E-18" />
+    <parent
+      link="link42" />
+    <child
+      link="link43" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link44">
+    <inertial>
+      <origin
+        xyz="0.000777562895115158 6.93889390390723E-18 0.00099320252068219"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.5079769435601E-06"
+        ixy="-6.07935645480834E-23"
+        ixz="2.09941976929328E-09"
+        iyy="1.76160916032082E-07"
+        iyz="8.13272776446046E-23"
+        izz="2.66278261010947E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint44"
+    type="revolute">
+    <origin
+      xyz="0.0219283225887988 0 0.00315053785327282"
+      rpy="9.98197067548097E-18 -0.286039075481936 -2.78586400562682E-18" />
+    <parent
+      link="link43" />
+    <child
+      link="link44" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link45">
+    <inertial>
+      <origin
+        xyz="0.000777562888117644 -2.08166817117217E-17 0.000993202520495035"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355967E-06"
+        ixy="-9.24658564627818E-22"
+        ixz="2.09941975361936E-09"
+        iyy="1.76160916032082E-07"
+        iyz="-2.09120366011164E-22"
+        izz="2.66278261010989E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint45"
+    type="continuous">
+    <origin
+      xyz="0.0219283220876046 0 0.00315053724959338"
+      rpy="9.98196859963349E-18 -0.286039020242028 -2.78586316128571E-18" />
+    <parent
+      link="link44" />
+    <child
+      link="link45" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link46">
+    <inertial>
+      <origin
+        xyz="0.000777562879570204 2.08166817117217E-17 0.000993202519524866"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014664" />
+      <inertia
+        ixx="2.50797694355875E-06"
+        ixy="-6.84379160043571E-22"
+        ixz="2.09941972002882E-09"
+        iyy="1.76160916032081E-07"
+        iyz="9.16698371699758E-24"
+        izz="2.6627826101108E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint46"
+    type="continuous">
+    <origin
+      xyz="0.0219412993475271 0 0.00306214408933647"
+      rpy="9.67906987276599E-18 -0.277955419308611 -2.66372607922671E-18" />
+    <parent
+      link="link45" />
+    <child
+      link="link46" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link47">
+    <inertial>
+      <origin
+        xyz="0.000777562872832843 6.93889390390723E-18 0.00099320252063391"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355704E-06"
+        ixy="-1.20872612896317E-22"
+        ixz="2.09941965648586E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.29603150015808E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint47"
+    type="continuous">
+    <origin
+      xyz="0.0220368423577479 0 0.000916386439735725"
+      rpy="2.79410053878592E-18 -0.0833094938667552 -5.06733299256941E-19" />
+    <parent
+      link="link46" />
+    <child
+      link="link47" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link48">
+    <inertial>
+      <origin
+        xyz="0.000777562873807619 2.42861286636753E-17 0.00099320252063391"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355704E-06"
+        ixy="-8.71570644310603E-23"
+        ixz="2.09941965648586E-09"
+        iyy="1.76160916032082E-07"
+        iyz="-1.27229211885762E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint48"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link47" />
+    <child
+      link="link48" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link49">
+    <inertial>
+      <origin
+        xyz="0.00077756287478245 -1.04083408558608E-17 0.00099320252063391"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355704E-06"
+        ixy="-2.89385585061269E-22"
+        ixz="2.09941965648589E-09"
+        iyy="1.76160916032082E-07"
+        iyz="-1.37062190547513E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint49"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141019 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link48" />
+    <child
+      link="link49" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link50">
+    <inertial>
+      <origin
+        xyz="0.000777562875757143 3.46944695195361E-18 0.00099320252063391"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355704E-06"
+        ixy="-2.56382200853749E-22"
+        ixz="2.09941965648579E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.3444474319095E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint50"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link49" />
+    <child
+      link="link50" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link51">
+    <inertial>
+      <origin
+        xyz="0.000777562876732016 -3.46944695195361E-18 0.000993202520633937"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355704E-06"
+        ixy="-2.89399246846692E-22"
+        ixz="2.09941965648586E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.36551216761887E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint51"
+    type="continuous">
+    <origin
+      xyz="0.0219499959141019 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link50" />
+    <child
+      link="link51" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link52">
+    <inertial>
+      <origin
+        xyz="0.000777562877706778 3.46944695195361E-18 0.00099320252063391"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355704E-06"
+        ixy="-3.56422443539679E-22"
+        ixz="2.09941965648585E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-8.46772220471978E-23"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint52"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link51" />
+    <child
+      link="link52" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link53">
+    <inertial>
+      <origin
+        xyz="0.000777562878681561 0 0.000993202520633951"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355704E-06"
+        ixy="-3.07182030507837E-22"
+        ixz="2.09941965648589E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.6273386241791E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint53"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link52" />
+    <child
+      link="link53" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link54">
+    <inertial>
+      <origin
+        xyz="0.000777562879656336 6.93889390390723E-18 0.000993202520633882"
+        rpy="0 0 0" />
+      <mass
+        value="0.00532757188014665" />
+      <inertia
+        ixx="2.50797694355703E-06"
+        ixy="4.86405056130534E-23"
+        ixz="2.09941965648588E-09"
+        iyy="1.76160916032081E-07"
+        iyz="-1.19524905836039E-22"
+        izz="2.66278261011253E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint54"
+    type="continuous">
+    <origin
+      xyz="0.021949995914102 0 0"
+      rpy="0 9.8170821762663E-33 0" />
+    <parent
+      link="link53" />
+    <child
+      link="link54" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>

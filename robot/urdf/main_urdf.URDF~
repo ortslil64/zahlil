@@ -1,0 +1,408 @@
+<!-- -*- mode: XML -*- -->
+<robot
+  name="zahlil">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="1.41834141779237E-16 -0.0309379427641738 -2.88870373057917E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.504170641673531" />
+      <inertia
+        ixx="0.00669504774857414"
+        ixy="5.19887713221827E-19"
+        ixz="-1.36872494453441E-19"
+        iyy="0.0149074707016974"
+        iyz="-1.85469719531668E-10"
+        izz="0.00826590878423466" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.843137254901961 0.564705882352941 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="back_right_link">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.778889674512674" />
+      <inertia
+        ixx="0.00154978310190932"
+        ixy="1.15305889248938E-19"
+        ixz="1.65075964416438E-20"
+        iyy="0.00154978310190932"
+        iyz="6.60473940621541E-20"
+        izz="0.00255442138810937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/back_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.686274509803922 0.470588235294118 1" />
+      </material>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+    <cylinder length="0.09" radius="0.07"
+          />
+      </geometry>
+    </collision>
+
+
+<collision>
+      <origin
+        xyz="0 0 0.068"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.02" radius="0.078" 
+          />
+      </geometry>
+    </collision>
+<collision>
+      <origin
+        xyz="0 0 -0.068"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.02" radius="0.078" 
+          />
+      </geometry>
+    </collision>
+
+  </link>
+  <joint
+    name="back_right_joint"
+    type="continuous">
+    <origin
+      xyz="0.183330594320853 0.124629742767508 -0.132179085894852"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_right_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="back_left_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.778889674512674" />
+      <inertia
+        ixx="0.00154978310190932"
+        ixy="1.15305889248939E-19"
+        ixz="5.35652878840196E-20"
+        iyy="0.00154978310190932"
+        iyz="6.60473940621541E-20"
+        izz="0.00255442138810937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/back_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.686274509803922 0.470588235294118 1" />
+      </material>
+    </visual>
+
+
+
+     <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+    <cylinder length="0.09" radius="0.07"
+          />
+      </geometry>
+    </collision>
+
+
+<collision>
+      <origin
+        xyz="0 0 0.068"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.02" radius="0.078" 
+          />
+      </geometry>
+    </collision>
+<collision>
+
+
+      <origin
+        xyz="0 0 -0.068"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.02" radius="0.078" 
+          />
+      </geometry>
+    </collision>
+
+
+
+  </link>
+  <joint
+    name="back_left_joint"
+    type="continuous">
+    <origin
+      xyz="0.183330594320854 -0.124370257232491 -0.132203133252938"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_left_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="front_right_link">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 0 -0.0375"
+        rpy="0 0 0" />
+      <mass
+        value="0.778889674512675" />
+      <inertia
+        ixx="0.00154978310190932"
+        ixy="1.15305889248939E-19"
+        ixz="5.5329939857466E-20"
+        iyy="0.00154978310190932"
+        iyz="6.60473940621541E-20"
+        izz="0.00255442138810937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/front_righr_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.686274509803922 0.470588235294118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+
+           <cylinder length="0.08" radius="0.07"
+          />
+
+      </geometry>
+    </collision>
+
+
+<collision>
+      <origin
+        xyz="0 0 0.048"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.02" radius="0.078" 
+          />
+      </geometry>
+    </collision>
+<collision>
+      <origin
+        xyz="0 0 -0.088"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.02" radius="0.078" 
+          />
+      </geometry>
+    </collision>
+
+  </link>
+  <joint
+    name="front_right_joint"
+    type="continuous">
+    <origin
+      xyz="-0.169383430381515 0.087129742767508 -0.132179085894852"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_right_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="front_left_link">
+    <inertial>
+      <origin
+        xyz="0 0 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.778889674512674" />
+      <inertia
+        ixx="0.00154978310190932"
+        ixy="1.15305889248939E-19"
+        ixz="5.35652878840195E-20"
+        iyy="0.00154978310190932"
+        iyz="6.60473940621541E-20"
+        izz="0.00255442138810937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zahlil/robot/meshes/front_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.686274509803922 0.470588235294118 1" />
+      </material>
+    </visual>
+   
+
+
+
+
+     <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+    <cylinder length="0.09" radius="0.07"
+          />
+      </geometry>
+    </collision>
+
+
+<collision>
+      <origin
+        xyz="0 0 0.068"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.02" radius="0.078" 
+          />
+      </geometry>
+    </collision>
+<collision>
+
+
+      <origin
+        xyz="0 0 -0.068"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.02" radius="0.078" 
+          />
+      </geometry>
+    </collision>
+
+
+
+  </link>
+  <joint
+    name="front_left_joint"
+    type="continuous">
+    <origin
+      xyz="-0.169383430381515 -0.124370257232491 -0.132203133252938"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_left_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+
+<!-- transmitions add  by Or -->
+<transmission name="tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="front_right_joint">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor1">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+<transmission name="tran2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="front_left_joint">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor2">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+<!-- gazebo plugin and friction  add  by Or -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/zahlil</robotNamespace>
+    </plugin>
+  </gazebo>
+  <gazebo reference="body">
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Wood</material>
+  </gazebo>
+
+  <gazebo reference="front_right_joint">
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="front_left_joint">
+    <mu1>1</mu1>
+    <mu2>1</mu2>
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+
+</robot>

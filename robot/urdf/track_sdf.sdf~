@@ -1,0 +1,2653 @@
+<!-- -*- mode: XML -*- -->
+<sdf version='1.4'>
+  <model name='track_urdf'>
+<!--  Added by or -->
+    <joint name='joint55' type='revolute'>
+      <child>link54</child>
+      <parent>link1</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+<!-- End of Added by or -->
+    <link name='link1'>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.000777563 -2.46331e-16 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-1.39461e-20</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-8.20596e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link1_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link1_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <link name='link2'>
+      <pose>0.02195 0 0 0 9.81708e-33 0</pose>
+      <inertial>
+        <pose>0.000777563 3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.24908e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.27279e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link2_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link2_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint2' type='revolute'>
+      <child>link2</child>
+      <parent>link1</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link3'>
+      <pose>0.0439 0 -2.15485e-34 0 1.96342e-32 0</pose>
+      <inertial>
+        <pose>0.000777567 -3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.6768e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.27667e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link3_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link3_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint3' type='revolute'>
+      <child>link3</child>
+      <parent>link2</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link4'>
+      <pose>0.06585 0 -6.46455e-34 0 2.94512e-32 0</pose>
+      <inertial>
+        <pose>0.000777563 3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.93127e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.35295e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link4_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link4_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint4' type='revolute'>
+      <child>link4</child>
+      <parent>link3</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link5'>
+      <pose>0.0878 0 -1.29291e-33 0 3.92683e-32 0</pose>
+      <inertial>
+        <pose>0.000777567 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-3.15301e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.38259e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link5_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link5_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint5' type='revolute'>
+      <child>link5</child>
+      <parent>link4</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link6'>
+      <pose>0.10975 0 -2.15485e-33 0 4.90854e-32 0</pose>
+      <inertial>
+        <pose>0.000777563 1.73472e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>5.68047e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.10509e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link6_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link6_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint6' type='revolute'>
+      <child>link6</child>
+      <parent>link5</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link7'>
+      <pose>0.1317 0 -3.23227e-33 0 -0.00828532 0</pose>
+      <inertial>
+        <pose>0.000785765 6.93889e-18 0.000986726 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50795e-06</ixx>
+          <ixy>-1.30119e-22</ixy>
+          <ixz>8.16576e-10</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.28185e-22</iyz>
+          <izz>2.66281e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link7_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link7_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint7' type='revolute'>
+      <child>link7</child>
+      <parent>link6</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link8'>
+      <pose>0.153662 0 9.07747e-05 2.75787e-19 -0.00828532 -3.99343e-20</pose>
+      <inertial>
+        <pose>0.000777563 -2.77556e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.11452e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>5.52679e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link8_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link8_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint8' type='revolute'>
+      <child>link8</child>
+      <parent>link7</parent>
+      <axis>
+        <xyz>3.76494e-20 1 2.75777e-19</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link9'>
+      <pose>0.17567 -1.49764e-21 0.00251687 7.25868e-18 -0.211762 -1.76663e-18</pose>
+      <inertial>
+        <pose>0.000777563 3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-4.06675e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.53566e-24</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link9_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link9_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint9' type='revolute'>
+      <child>link9</child>
+      <parent>link8</parent>
+      <axis>
+        <xyz>2.40977e-19 1 7.09653e-18</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link10'>
+      <pose>0.196446 -6.10703e-20 0.010206 1.87252e-17 -0.497801 -7.13944e-18</pose>
+      <inertial>
+        <pose>0.000777563 1.04083e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.78006e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>5.95002e-24</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link10_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link10_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint10' type='revolute'>
+      <child>link10</child>
+      <parent>link9</parent>
+      <axis>
+        <xyz>-1.80173e-18 1 1.64526e-17</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link11'>
+      <pose>0.214209 -2.4688e-19 0.0234448 3.50916e-17 -0.78384 -1.83735e-17</pose>
+      <inertial>
+        <pose>0.000777563 -3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-3.03596e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-8.59508e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link11_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link11_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint11' type='revolute'>
+      <child>link11</child>
+      <parent>link10</parent>
+      <axis>
+        <xyz>-6.40128e-18 1 2.48521e-17</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link12'>
+      <pose>0.227514 -6.01906e-19 0.0411575 6.5828e-17 -1.06988 -4.45566e-17</pose>
+      <inertial>
+        <pose>0.000777563 1.73472e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-5.58683e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>3.24391e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link12_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link12_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint12' type='revolute'>
+      <child>link12</child>
+      <parent>link11</parent>
+      <axis>
+        <xyz>-1.31839e-17 1 3.16126e-17</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link13'>
+      <pose>0.235282 -1.15538e-18 0.0619048 1.69699e-16 -1.35592 -1.44198e-16</pose>
+      <inertial>
+        <pose>0.000777563 -3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-3.03256e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-3.3854e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link13_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link13_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint13' type='revolute'>
+      <child>link13</child>
+      <parent>link12</parent>
+      <axis>
+        <xyz>-2.15985e-17 1 3.61846e-17</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link14'>
+      <pose>0.236879 -1.9204e-18 0.0840006 0 -1.37 0</pose>
+      <inertial>
+        <pose>1.73472e-17 0.000777563 -0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>1.76161e-07</ixx>
+          <ixy>7.80926e-23</ixy>
+          <ixz>-6.95101e-23</ixz>
+          <iyy>2.50798e-06</iyy>
+          <iyz>-2.09942e-09</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link14_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link14_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint14' type='revolute'>
+      <child>link14</child>
+      <parent>link13</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link15'>
+      <pose>0.232177 6.92033e-17 0.105649 -3.14159 -1.2136 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 -2.77556e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>8.85596e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.18868e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link15_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link15_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint15' type='revolute'>
+      <child>link15</child>
+      <parent>link14</parent>
+      <axis>
+        <xyz>-4.25095e-15 1 -8.67114e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link16'>
+      <pose>0.221559 4.09215e-17 0.125092 -3.14159 -0.927557 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 -3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-8.67439e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-2.02827e-24</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link16_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link16_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint16' type='revolute'>
+      <child>link16</child>
+      <parent>link15</parent>
+      <axis>
+        <xyz>-4.25992e-15 1 -8.70492e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link17'>
+      <pose>0.205885 -1.22168e-17 0.140748 -3.14159 -0.641518 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 3.81639e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>3.83863e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>3.6365e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link17_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link17_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint17' type='revolute'>
+      <child>link17</child>
+      <parent>link16</parent>
+      <axis>
+        <xyz>-4.26756e-15 1 -8.7626e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link18'>
+      <pose>0.186431 -8.59514e-17 0.151346 -3.14159 -0.355479 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 2.77556e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-3.09648e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-4.16571e-24</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link18_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link18_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint18' type='revolute'>
+      <child>link18</child>
+      <parent>link17</parent>
+      <axis>
+        <xyz>-4.27327e-15 1 -8.83951e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link19'>
+      <pose>0.164799 -1.74164e-16 0.156128 -3.14159 -0.078958 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 2.42861e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>2.92912e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.65137e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link19_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link19_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint19' type='revolute'>
+      <child>link19</child>
+      <parent>link18</parent>
+      <axis>
+        <xyz>-4.2765e-15 1 -8.92626e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link20'>
+      <pose>0.142765 -2.67614e-16 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>2.11499e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.09615e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link20_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link20_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint20' type='revolute'>
+      <child>link20</child>
+      <parent>link19</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link21'>
+      <pose>0.120815 -3.61493e-16 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>-0.0211724 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>2.12002e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.11219e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link21_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link21_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint21' type='revolute'>
+      <child>link21</child>
+      <parent>link20</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link22'>
+      <pose>0.0988652 -4.55373e-16 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-1.14384e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.72601e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link22_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link22_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint22' type='revolute'>
+      <child>link22</child>
+      <parent>link21</parent>
+      <axis>
+        <xyz>4.27698e-15 -1 8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link23'>
+      <pose>0.0769152 -5.49253e-16 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 0 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-1.44424e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.77218e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link23_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link23_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint23' type='revolute'>
+      <child>link23</child>
+      <parent>link22</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link24'>
+      <pose>0.0549652 -6.43132e-16 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-1.92604e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>8.71778e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link24_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link24_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint24' type='revolute'>
+      <child>link24</child>
+      <parent>link23</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link25'>
+      <pose>0.0330152 -7.37012e-16 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>8.3355e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.22175e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link25_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link25_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint25' type='revolute'>
+      <child>link25</child>
+      <parent>link24</parent>
+      <axis>
+        <xyz>4.27698e-15 -1 8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link26'>
+      <pose>0.0110652 -8.30891e-16 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 1.04083e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.87629e-24</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.32609e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link26_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link26_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint26' type='revolute'>
+      <child>link26</child>
+      <parent>link25</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link27'>
+      <pose>-0.0108848 -9.24771e-16 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>1.6434e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.30599e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link27_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link27_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint27' type='revolute'>
+      <child>link27</child>
+      <parent>link26</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link28'>
+      <pose>-0.0328348 -1.01865e-15 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-1.74764e-24</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.38968e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link28_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link28_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint28' type='revolute'>
+      <child>link28</child>
+      <parent>link27</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link29'>
+      <pose>-0.0547848 -1.11253e-15 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 -1.38778e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>2.53966e-24</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.1609e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link29_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link29_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint29' type='revolute'>
+      <child>link29</child>
+      <parent>link28</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link30'>
+      <pose>-0.0767348 -1.20641e-15 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 0 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>7.70728e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.69709e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link30_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link30_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint30' type='revolute'>
+      <child>link30</child>
+      <parent>link29</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link31'>
+      <pose>-0.0986847 -1.30029e-15 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 0 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>1.20541e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.83436e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link31_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link31_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint31' type='revolute'>
+      <child>link31</child>
+      <parent>link30</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link32'>
+      <pose>-0.120635 -1.39417e-15 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>1.54857e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.5474e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link32_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link32_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint32' type='revolute'>
+      <child>link32</child>
+      <parent>link31</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link33'>
+      <pose>-0.142585 -1.48805e-15 0.157 -3.14159 -3.95517e-15 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-1.23007e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>9.32458e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link33_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link33_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint33' type='revolute'>
+      <child>link33</child>
+      <parent>link32</parent>
+      <axis>
+        <xyz>4.27698e-15 -1 8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link34'>
+      <pose>-0.164535 -1.58193e-15 0.157 -3.14159 0.00694969 -3.14159</pose>
+      <inertial>
+        <pose>0.000784446 0 0.000987775 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50796e-06</ixx>
+          <ixy>-1.47258e-22</ixy>
+          <ixz>1.0234e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>9.0632e-23</iyz>
+          <izz>2.6628e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link34_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link34_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint34' type='revolute'>
+      <child>link34</child>
+      <parent>link33</parent>
+      <axis>
+        <xyz>-4.27698e-15 1 -8.95236e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link35'>
+      <pose>-0.186495 -1.67592e-15 0.156924 -3.14159 0.00694969 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 3.1225e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>4.81739e-24</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>3.49095e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link35_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link35_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint35' type='revolute'>
+      <child>link35</child>
+      <parent>link34</parent>
+      <axis>
+        <xyz>-4.27701e-15 1 -8.95467e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link36'>
+      <pose>-0.20851 -1.77218e-15 0.154576 -3.14159 0.205976 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 -6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.82505e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>1.53253e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link36_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link36_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint36' type='revolute'>
+      <child>link36</child>
+      <parent>link35</parent>
+      <axis>
+        <xyz>4.27723e-15 -1 9.02138e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link37'>
+      <pose>-0.22933 -1.86806e-15 0.147007 -3.14159 0.492015 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.7259e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-6.95076e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link37_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link37_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint37' type='revolute'>
+      <child>link37</child>
+      <parent>link36</parent>
+      <axis>
+        <xyz>-4.27524e-15 1 -9.11506e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link38'>
+      <pose>-0.247169 -1.9563e-15 0.133872 -3.14159 0.778054 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 -3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>2.24541e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.03973e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link38_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link38_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint38' type='revolute'>
+      <child>link38</child>
+      <parent>link37</parent>
+      <axis>
+        <xyz>4.27069e-15 -1 9.19932e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link39'>
+      <pose>-0.260577 -2.02978e-15 0.116236 -3.14159 1.06409 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 1.00614e-16 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>2.43214e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>7.88256e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link39_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link39_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint39' type='revolute'>
+      <child>link39</child>
+      <parent>link38</parent>
+      <axis>
+        <xyz>4.26395e-15 -1 9.26732e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link40'>
+      <pose>-0.268464 -2.0826e-15 0.0955342 -3.14159 1.35013 -3.14159</pose>
+      <inertial>
+        <pose>0.000777563 4.85723e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>2.93291e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>7.52098e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link40_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link40_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint40' type='revolute'>
+      <child>link40</child>
+      <parent>link39</parent>
+      <axis>
+        <xyz>-4.25556e-15 1 -9.31352e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link41'>
+      <pose>-0.270189 -2.11051e-15 0.073448 -1.4288e-14 1.50542 -1.00113e-14</pose>
+      <inertial>
+        <pose>0.000777563 6.93889e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-1.33396e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-5.57186e-24</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link41_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link41_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint41' type='revolute'>
+      <child>link41</child>
+      <parent>link40</parent>
+      <axis>
+        <xyz>4.24621e-15 -1 9.33419e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link42'>
+      <pose>-0.265613 -2.11131e-15 0.0517723 -2.70974e-15 1.21938 1.69252e-15</pose>
+      <inertial>
+        <pose>0.000777563 -2.08167e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.01815e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>4.53906e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link42_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link42_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint42' type='revolute'>
+      <child>link42</child>
+      <parent>link41</parent>
+      <axis>
+        <xyz>-4.23665e-15 1 -9.32762e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link43'>
+      <pose>-0.255107 -2.08499e-15 0.0322686 -1.56168e-15 0.933343 2.97268e-15</pose>
+      <inertial>
+        <pose>0.000777563 -6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.10436e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>4.79052e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link43_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link43_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint43' type='revolute'>
+      <child>link43</child>
+      <parent>link42</parent>
+      <axis>
+        <xyz>-4.22767e-15 1 -9.29437e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link44'>
+      <pose>-0.239524 -2.03375e-15 0.0165218 -1.15795e-15 0.647304 3.52171e-15</pose>
+      <inertial>
+        <pose>0.000777563 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-6.07936e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>8.13273e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link44_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link44_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint44' type='revolute'>
+      <child>link44</child>
+      <parent>link43</parent>
+      <axis>
+        <xyz>4.22e-15 -1 9.23713e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link45'>
+      <pose>-0.220132 -1.96181e-15 0.00581139 -9.79267e-16 0.361265 3.86812e-15</pose>
+      <inertial>
+        <pose>0.000777563 -2.08167e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-9.24659e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-2.0912e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link45_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link45_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint45' type='revolute'>
+      <child>link45</child>
+      <parent>link44</parent>
+      <axis>
+        <xyz>4.21425e-15 -1 9.16056e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link46'>
+      <pose>-0.198524 -1.87523e-15 0.000920547 -9.1051e-16 0.0833095 4.13518e-15</pose>
+      <inertial>
+        <pose>0.000777563 2.08167e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-6.84379e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>9.16698e-24</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link46_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link46_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint46' type='revolute'>
+      <child>link46</child>
+      <parent>link45</parent>
+      <axis>
+        <xyz>4.21095e-15 -1 9.07352e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link47'>
+      <pose>-0.176488 -1.78327e-15 7.99816e-16 -9.046e-16 -3.4972e-15 4.21044e-15</pose>
+      <inertial>
+        <pose>0.000777563 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-1.20873e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.29603e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link47_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link47_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint47' type='revolute'>
+      <child>link47</child>
+      <parent>link46</parent>
+      <axis>
+        <xyz>4.21044e-15 -1 9.046e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link48'>
+      <pose>-0.154538 -1.69085e-15 8.7658e-16 -9.046e-16 -3.4972e-15 4.21044e-15</pose>
+      <inertial>
+        <pose>0.000777563 2.42861e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-8.71571e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.27229e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link48_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link48_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint48' type='revolute'>
+      <child>link48</child>
+      <parent>link47</parent>
+      <axis>
+        <xyz>4.21044e-15 -1 9.046e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link49'>
+      <pose>-0.132588 -1.59843e-15 9.53343e-16 -9.046e-16 -3.4972e-15 4.21044e-15</pose>
+      <inertial>
+        <pose>0.000777563 -1.04083e-17 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.89386e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.37062e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link49_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link49_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint49' type='revolute'>
+      <child>link49</child>
+      <parent>link48</parent>
+      <axis>
+        <xyz>-4.21044e-15 1 -9.046e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link50'>
+      <pose>-0.110638 -1.50601e-15 1.03011e-15 -9.046e-16 -3.4972e-15 4.21044e-15</pose>
+      <inertial>
+        <pose>0.000777563 3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.56382e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.34445e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link50_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link50_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint50' type='revolute'>
+      <child>link50</child>
+      <parent>link49</parent>
+      <axis>
+        <xyz>-4.21044e-15 1 -9.046e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link51'>
+      <pose>-0.0886877 -1.41359e-15 1.10687e-15 -9.046e-16 -3.4972e-15 4.21044e-15</pose>
+      <inertial>
+        <pose>0.000777563 -3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-2.89399e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.36551e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link51_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link51_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint51' type='revolute'>
+      <child>link51</child>
+      <parent>link50</parent>
+      <axis>
+        <xyz>-4.21044e-15 1 -9.046e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link52'>
+      <pose>-0.0667377 -1.32117e-15 1.18363e-15 -9.046e-16 -3.4972e-15 4.21044e-15</pose>
+      <inertial>
+        <pose>0.000777563 3.46945e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-3.56422e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-8.46772e-23</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link52_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link52_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint52' type='revolute'>
+      <child>link52</child>
+      <parent>link51</parent>
+      <axis>
+        <xyz>4.21044e-15 -1 9.046e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link53'>
+      <pose>-0.0447877 -1.22875e-15 1.2604e-15 -9.046e-16 -3.4972e-15 4.21044e-15</pose>
+      <inertial>
+        <pose>0.000777563 0 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>-3.07182e-22</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.62734e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link53_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link53_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint53' type='revolute'>
+      <child>link53</child>
+      <parent>link52</parent>
+      <axis>
+        <xyz>-4.21044e-15 1 -9.046e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='link54'>
+      <pose>-0.0228377 -1.13634e-15 1.33716e-15 -9.046e-16 -3.4972e-15 4.21044e-15</pose>
+      <inertial>
+        <pose>0.000777563 6.93889e-18 0.000993203 0 -0 0</pose>
+        <mass>0.00532757</mass>
+        <inertia>
+          <ixx>2.50798e-06</ixx>
+          <ixy>4.86405e-23</ixy>
+          <ixz>2.09942e-09</ixz>
+          <iyy>1.76161e-07</iyy>
+          <iyz>-1.19525e-22</iyz>
+          <izz>2.66278e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='link54_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link54_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+              <uri>model://zahlil/robot/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='joint54' type='revolute'>
+      <child>link54</child>
+      <parent>link53</parent>
+      <axis>
+        <xyz>4.21044e-15 1 9.046e-16</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+  </model>
+</sdf>

@@ -1,0 +1,41 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+
+  <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+<arg name="sw" default="4"/>  <!-- srvss world-->
+
+  <arg name="paused" default="true"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+
+  <!-- We resume the logic in empty_world.launch -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    
+  </include>
+<!-- load the main bodey-->
+ <param name="robot_description" command="cat $(find zahlil)/robot/urdf/main_urdf.URDF" />
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+	args="-urdf -model zahlil -param robot_description -z 0.21 "/>
+
+<!-- load the  treck system-->
+ <param name="treck_description" command="cat $(find zahlil)/robot/urdf/track_sdf.sdf" />
+
+  <node name="sdf_right_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+	args="-sdf -model track_right -param treck_description -z 0 -y 0.11 -x 0.025 "/>
+  <node name="sdf_left_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+	args="-sdf -model track_left -param treck_description -z 0 -y -0.11 -x 0.025 "/>
+
+
+  <!-- ros_control clam launch file   -->
+  <include file="$(find zahlil)/launch/zahlil_controller.launch" />
+  
+ 
+
+</launch>
